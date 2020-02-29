@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	  <meta charset="UTF-8">
+	  <title>prototype</title>
+      <link rel="stylesheet" href="estilo.css"/>
+      <script src="SimpleImage.js"></script>
+     </head>
+<body>
+      <header>
+       <h1>App prototype</h1>
+    
+       <p>En esta app puedes quitar el fondo verde de tus imágenes<br><strong>funciona mejor con imagenes de igual tamaño</strong></p>
+      </header>
+      <section>
+            <div class="container">
+            <canvas id="canva"></canvas>
+            <canvas id="canva2"></canvas>
+            </div>
+            <br>
+            
+           <label for="fle">Foreground image:</label><input name="fle" type="file" id="fle" multiple="false" accept="image/*" onchange="upload()">
+            
+            
+            
+            <label for="fle2">Background image:</label><input type="file" id="fle2" name="fle2" multiple="false" accept="image/*" onchange="uploadB()">
+          <!----  <input type="text" id="txt">--->
+           <!---- <button type="button" id="grises" value="upload" onclick="pxlAVR()">Escala de grises</button>--->
+            <button type="button" id="fcol" value="upload" onclick="fullClean()">Limpiar canvas</button>
+            
+            <button type="button" id="fcol2" value="upload" onclick="crearoutput()">Quitar fondo verde</button> 
+            <!----<button type="button" id="fcol3" value="upload" onclick="crearoutput()">crearoutput</button>--->
+      </section>
+      <script src="prototype.js"></script>
+         
+</body>
